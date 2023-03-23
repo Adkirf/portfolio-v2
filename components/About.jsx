@@ -12,7 +12,7 @@ function About() {
                 <p className='py-2 text-gray-600'> This Sd apdf adfgnsdf gsdfgsdf gs dfgsdf gsdf gsdfgisdfhg sdfg sdfgoshdfg sdfghsdf gsdflgsdf gsdf gsjdfgnsd fg</p>
             </div>
             <div className='flex w-full h-auto shadow-xl shadow-gray-400 rounded-xl items-center justify-center p-4 hover:scale-105 duration-300'>
-                <Image src="/../public/assets/about.jpg" alt="/" width="300" height="300" className='rounded-xl'/>
+                <img src='/about.jpg' alt="/" width="300" height="300" className='rounded-xl'/>
             </div>
         </div>
     </div>
