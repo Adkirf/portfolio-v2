@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 
 import { HiMail } from "react-icons/hi";
 import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
@@ -13,13 +14,19 @@ function Main() {
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'> There are no problems, only solutions yet to be found. </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsTwitter />
+                        <Link href="https://twitter.com/home " target="_blank">
+                            <BsTwitter />
+                        </Link>
                     </div>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <HiMail />
+                        <Link href="/">
+                            <HiMail />
+                        </Link>
                     </div>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsGithub />
+                        <Link href="https://github.com/Adkirf" target="_blank">
+                            <BsGithub />
+                        </Link>
                     </div>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BsLinkedin />

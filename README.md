@@ -22,8 +22,6 @@ This projects UI is based on [Link](https://www.youtube.com/watch?v=CMx51wpd7g4)
   
      
 
-<!-- CONTACT -->
-
 ## Contact
 
 Your Name - [@adkirf](https://twitter.com/adkirf)

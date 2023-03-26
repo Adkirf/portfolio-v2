@@ -55,9 +55,7 @@ function Navbar() {
                         <Link href="/#main" onClick={handleNav}>
                             <l1 className="ml-10 text-sm hover:border-b"> Home</l1>
                         </Link>
-                        <Link href="/#about" onClick={handleNav}>
-                            <l1 className="ml-10 text-sm hover:border-b"> About</l1>
-                        </Link>
+                    
                         <Link href="/#skills" onClick={handleNav}>
                             <l1 className="ml-10 text-sm hover:border-b"> Skills</l1>
                         </Link>
@@ -87,9 +85,6 @@ function Navbar() {
                         <Link href="/#main" onClick={handleNav}>
                             <li className='py-4 text-sm'>  Home </li>
                         </Link>
-                        <Link href="/#about" onClick={handleNav}>
-                            <li className='py-4 text-sm'>  About </li>
-                        </Link>
                         <Link href="/#skills" onClick={handleNav}>
                             <li className='py-4 text-sm'>  Skills </li>
                         </Link>
@@ -101,13 +96,17 @@ function Navbar() {
                         <p className='uppercase tracking-widest text-[#5651e5]'> Lets Connect</p>
                         <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <BsTwitter />
+                                <Link href="https://twitter.com/home " target="_blank">
+                                    <BsTwitter />
+                                </Link>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <HiMail />
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <BsGithub />
+                                <Link href="https://github.com/Adkirf" target="_blank">
+                                    <BsGithub />
+                                </Link>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <BsLinkedin />

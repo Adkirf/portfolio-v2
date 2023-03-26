@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Main from "../components/Main"
-import About from "../components/About"
 import Skills from "../components/Skills"
 import Projects from '@/components/Projects'
 import { Octokit } from "octokit";
@@ -17,7 +16,6 @@ export default function Home({projects, languages}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Main />
-      <About />
       <Skills languages={languages}/>
       <Projects projects={projects}/>
     </>

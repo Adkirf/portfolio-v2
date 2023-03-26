@@ -42,12 +42,9 @@ function  Project({projectRaw, projectDetail, projectLanguages}) {
           <h3>{projectRaw.description}</h3>
         </div>
       </div>
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-7 gap-8 pt-8'>
+      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-7 gap-8 pt-4'>
         <div className='col-span-5'>
-         <ReactMarkdown>
-            {projectDetail}
-         </ReactMarkdown>
-          <div className='flex flex-row pt-4 '>
+          <div className='flex flex-row pb-4 '>
             <Link target= "_blank" href={projectRaw.html_url}>
               <button className='px-4 py-2 mt-4 mr-8 flex flex-row gap-2 align-center justify-center'>
                   <BsCode size={25}/>
@@ -65,8 +62,10 @@ function  Project({projectRaw, projectDetail, projectLanguages}) {
               </button>
             </Link>
           </div>
+         <ReactMarkdown children={projectDetail}/>
         </div>
-        <div className='col-span-5 w-[50%] md:w-full justify-self-center md:col-span-2 shadow-xl shadow-gray-400 rounded-xl p-4'>
+  
+        <div className='col-span-5 w-[50%] h-fit md:w-full justify-self-center md:col-span-2 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
           </div >   

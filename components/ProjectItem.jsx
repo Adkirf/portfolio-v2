@@ -31,12 +31,17 @@ function ProjectItem({project}) {
             height={100}
 
         />
-        <div className='hidden group-hover:block absolute'>
+        <div className='hidden group-hover:flex flex-col justify-center items-center absolute'>
             <h3 className='text-2xl text-white tracking-widest text-center'>{project.projectRaw.name}</h3>
-            <p className='pb-4 pt-2 text-white text-center'>{project.projectRaw.name}</p>
-            <Link href={`projects/${project.projectRaw.name.replace(/ /g, '-')}`}>
-                <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More info</p>
-            </Link>
+            <p className='pb-4 pt-2 text-white text-center'>{project.projectRaw.description}</p>
+            
+        
+
+              <Link href={`projects/${project.projectRaw.name.replace(/ /g, '-')}`}>
+                  <p className='text-center py-3 px-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More info</p>
+              </Link>
+        
+          
         </div>
     </div>
   )
